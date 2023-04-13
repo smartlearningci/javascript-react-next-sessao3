@@ -38,3 +38,20 @@ var facebook = {
   },
   "acoesDaEmpresa": 110
 };
+
+
+//opção 1 - spread
+var empresa2 = {
+  ...empresa
+}
+
+
+empresa2.nome = "teste"
+console.log(empresa)
+console.log(empresa2)
+
+let empresa3 = Object.assign({}, empresa);
+empresa3.nome = "nova empresa"
+let empresa4 = JSON.parse(JSON.stringify(empresa));
+empresa4.nome = "mais uma empresa JSON"
+console.log(empresa4)
